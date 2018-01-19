@@ -1,0 +1,24 @@
+.Signup {
+  position: fixed;
+  width: 70vw;
+  height: 80vh;
+  left: 15vw;
+  top: 10vh;
+  background-color: #303f9f;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 2px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.Signup h1 {
+  position: relative;
+  font-size: 20px;
+  width: 50%;
+  left: 25%;
+  padding: 20px;
+  background-color: #001970;
+  top: -35px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,66 @@
+.Login {
+  position: fixed;
+  width: 70vw;
+  height: 80vh;
+  left: 15vw;
+  top: 10vh;
+  background-color: #6668d0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 2px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+  display: grid;
+}
+
+.Login h1 {
+  position: relative;
+  font-size: 20px;
+  padding: 20px;
+  background-color: #303f9f;
+  top: -35px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  grid-column: 6 / 8;
+}
+
+.Login input {
+  display: block;
+  background-color: rgb(0, 24, 111);
+  color: white;
+  border: medium none;
+  padding: 20px 20px 20px 45px;
+  font-size: 20px;
+  border-radius: 40px;
+  grid-column: 5 / 9;
+  min-width: 150px;
+}
+
+.Login button {
+  grid-column: 6 / 8;
+  color: white;
+  border: none;
+  background-color: #303f9f;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 2px;
+  text-transform: uppercase;
+  padding: 20px 40px 20px 40px;
+  box-shadow: 0 0 50px rgba(255,255,255,.1);
+}
+
+.Login button::-moz-focus-inner {
+  border: 0;
+}
+
+.Login button:focus {
+  background-color: rgb(0, 24, 111);
+}
+
+.Login a {
+  grid-column: 6/8;
+  grid-row: 9/10;
+  color: white;
+}
+
