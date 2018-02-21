@@ -55,7 +55,7 @@
 }
 
 .Login button:focus {
-  background-color: rgb(0, 24, 111);
+  background-color: #001970;
 }
 
 .Login a {
