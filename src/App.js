@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom'
 
 import './App.css'
+import Home from './Home'
 import Login from './Login'
 import Signup from './Signup'
 import Profile from './Profile'
@@ -15,7 +16,7 @@ class App extends Component {
       <Router>
         <div className='App'>
           <div className='content'>
-            <Route exact path="/" component={Login}/>
+            <Route exact path="/" component={Home}/>
             <Route path="/login" component={Login}/>
             <Route path="/signup" component={Signup}/>
             <Route path="/profile" component={Profile}/>
