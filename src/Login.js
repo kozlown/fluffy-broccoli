@@ -28,7 +28,7 @@ class Login extends React.Component {
   login () {
     const { email, password } = this.state
     if (email === 'kozlown@gmail.com' && password === 'coucou') {
-      this.props.history.push('/profile')
+      this.props.history.push('/dashboard')
     }
     else {
 
