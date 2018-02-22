@@ -11,8 +11,8 @@ class Home extends React.Component {
     this.state = {
       position: {
         coords: {
-          latitude: 3,
-          longitude: 53
+          latitude: 43.74374,
+          longitude: 1.38675
         }
       }
     }

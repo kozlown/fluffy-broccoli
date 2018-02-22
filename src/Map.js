@@ -18,7 +18,7 @@ const Map = compose(
   }
 
   return (<GoogleMap
-    defaultZoom={8}
+    defaultZoom={14}
     center={coordinates}
   >
     {props.isMarkerShown && <Marker position={coordinates} />}
