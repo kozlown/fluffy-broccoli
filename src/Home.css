@@ -1,3 +1,17 @@
+.Home {
+  position: fixed;
+  width: 70vw;
+  height: 80vh;
+  left: 15vw;
+  top: 10vh;
+  background-color: #6668d0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 2px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+
 .Home button {
   position: fixed;
   top: 20px;
@@ -11,4 +25,18 @@
   text-transform: uppercase;
   padding: 20px 40px 20px 40px;
   box-shadow: 0 0 50px rgba(255,255,255,.1);
+}
+
+.Home input {
+  position: fixed;
+  top: 20px;
+  left: calc(50vw - 170px);
+  display: block;
+  background-color: rgb(0, 24, 111);
+  color: white;
+  border: medium none;
+  padding: 20px 20px 20px 45px;
+  font-size: 20px;
+  border-radius: 40px;
+  min-width: 150px;
 }

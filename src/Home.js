@@ -21,6 +21,7 @@ class Home extends React.Component {
   render () {
     return (<div className='Home'>
       <Map isMarkerShown coords={this.state.position.coords}/>
+      <input placeholder='Rechercher des trajets'/>
       <Link to="/login">
         <button>Login</button>
       </Link>
