@@ -79,7 +79,7 @@ class Dashboard extends React.Component {
       <div>Départ: De {trajet.depart.nom} le {trajet.departDate.toLocaleDateString('fr-FR', options)}</div>
       <div>Arrivée: De {trajet.arrivee.nom} le {trajet.arriveeDate.toLocaleDateString('fr-FR', options)}</div>
       <div>Conducteur: {trajet.driver}</div>
-      <div>Passagers: {trajet.listePassagers.map(passager => <div>{passager}</div>)}</div>
+      <div>Passagers: {trajet.listePassagers.map(passager => `${passager} `)}</div>
       <button>Voyager !</button>
     </div>)
 

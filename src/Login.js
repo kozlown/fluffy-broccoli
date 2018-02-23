@@ -12,6 +12,12 @@ class Login extends React.Component {
       email: null,
       passwd: null
     };
+
+    document.addEventListener('keypress', e => {
+      if (e.keyCode === 13) {
+        this.login()
+      }
+    })
   }
 
   // REQ /AuthSrv?email=dsfdqsf&password=dsqfdsf
@@ -44,14 +50,10 @@ class Login extends React.Component {
 
   async login() {
     const { email, passwd } = this.state;
-    console.log("passwd", passwd);
-    console.log("qd", qs.stringify({ email, passwd }));
     const check = await axios.post(
       "http://localhost:8080/formAuth",
       qs.stringify({ email, passwd })
-    );
-    console.info(await check);
-    console.log(check.data);
+    )
     if (check.data.email) {
       this.props.history.push("/dashboard");
     } else {
