@@ -25,7 +25,7 @@ class Profile extends React.Component {
                     nous n'avons pas trouvé votre utilisateur
                   </div>
                 )}
-                {result.body.mail ? (
+                {result.body.email ? (
                   <div className="Profile__mail">
                     vous pouvez contacter cet utilisateur par mail :
                     {result.body.email}
