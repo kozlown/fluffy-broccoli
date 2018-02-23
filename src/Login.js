@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
 import { Link } from 'react-router-dom'
 
 import './Login.css'
@@ -13,6 +14,8 @@ class Login extends React.Component {
     }
   }
 
+  // REQ /AuthSrv?email=dsfdqsf&password=dsqfdsf
+
   render () {
     return (
       <div className='Login'>
@@ -25,8 +28,13 @@ class Login extends React.Component {
     )
   }
 
-  login () {
+  async login () {
     const { email, password } = this.state
+    const check = axios.post(
+      'http://localhost:8080',
+      { email, password }
+    )
+    console.info(await check)
     if (email === 'kozlown@gmail.com' && password === 'coucou') {
       this.props.history.push('/dashboard')
     }
