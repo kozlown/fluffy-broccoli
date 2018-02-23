@@ -25,12 +25,18 @@
   grid-column: 6 / 8;
 }
 
-.Profile__name{
-  grid-row: 5 / 6;
+.Profile p {
   grid-column: 5 / 9;
 }
 
-.Profile__mail{
+.Profile .name {
+  grid-row: 5 / 6;
+}
+
+.Profile .mail {
   grid-row: 7 / 8;
-  grid-column: 5 / 9;
+}
+
+.Profile .tel {
+  grid-row: 9 / 10;
 }

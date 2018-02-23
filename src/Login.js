@@ -34,7 +34,7 @@ class Login extends React.Component {
       'http://localhost:8080/Covoiturage/formAuth',
       { email, password }
     )
-    console.info(await check)
+    //console.info(await check)
     if (email === 'kozlown@gmail.com' && password === 'coucou') {
       this.props.history.push('/dashboard')
     }

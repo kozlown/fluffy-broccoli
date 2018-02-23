@@ -46,3 +46,22 @@
 .Dashboard .menu button.lister {
   width: 50%;
 }
+
+.Dashboard .trajet {
+  grid-column: 1 / 13;
+  padding-top: 20px;
+}
+
+.Dashboard .trajet div {
+  margin: 10px;
+}
+
+.Dashboard .trajet button {
+  float: right;
+  margin-right: 50px;
+}
+
+.Dashboard .proposer {
+  grid-column: 2 / 12;
+  grid-row: 2 / 13;
+}

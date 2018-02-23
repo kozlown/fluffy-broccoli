@@ -12,31 +12,24 @@ class Profile extends React.Component {
         verbose={true}
       >
         {({ error, result, loading }) => {
+          if (error) {
+            result = {
+              body: {
+                name: 'nigel',
+                mail: 'kozlown@gmail.com',
+                tel: '0613609461'
+              }
+            }
+          }
           if (loading) {
             return <div>loading...</div>;
           } else {
             return (
               <div className="Profile">
                 <h1>Profile</h1>
-                {result.body.name ? (
-                  <div className="Profile__name">nom : {result.body.name}</div>
-                ) : (
-                  <div className="Profile__name">
-                    nous n'avons pas trouvé votre utilisateur
-                  </div>
-                )}
-                {result.body.mail ? (
-                  <div className="Profile__mail">
-                    vous pouvez contacter cet utilisateur par mail :
-                    {result.body.email}
-                  </div>
-                ) : null}
-                {result.body.tel ? (
-                  <div className="Profile__tel">
-                    ainsi que par tel:
-                    {result.body.tel}
-                  </div>
-                ) : null}
+                <p className='name'>Name: {result.body.name}</p>
+                <p className='mail'>Mail: {result.body.mail}</p>
+                <p className='tel'>Téléphone: {result.body.tel}</p>
               </div>
             );
           }
