@@ -1,0 +1,14 @@
+.Home button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: white;
+  border: none;
+  background-color: #303f9f;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 2px;
+  text-transform: uppercase;
+  padding: 20px 40px 20px 40px;
+  box-shadow: 0 0 50px rgba(255,255,255,.1);
+}
