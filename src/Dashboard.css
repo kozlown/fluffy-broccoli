@@ -20,6 +20,12 @@
   top: 20px;
 }
 
+.Dashboard .Logout-button {
+  position: fixed;
+  right: 20px;
+  top: 120px;
+}
+
 .Dashboard .menu {
   grid-column: 1 / 13;
 }

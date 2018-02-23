@@ -1,5 +1,7 @@
 import React from 'react'
 import Map from './Map'
+import axios from 'axios'
+import qs from "qs"
 
 import './Dashboard.css'
 import { Link } from 'react-router-dom'
@@ -25,6 +27,10 @@ class Dashboard extends React.Component {
         position
       })
     })
+  }
+
+  static logout () {
+    axios.get('http://localhost:8080/Covoiturage/formAuth', qs.stringify({ logout: true }))
   }
 
   render () {
@@ -97,6 +103,9 @@ class Dashboard extends React.Component {
         {this.state.panel === 'proposer' ? proposer : lister}
         <Link to="/profile">
           <button className='Profile-button'>Profile</button>
+        </Link>
+        <Link to="/">
+          <button onClick={Dashboard.logout} className='Logout-button'>Logout</button>
         </Link>
       </div>
     )
