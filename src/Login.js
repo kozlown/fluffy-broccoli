@@ -10,7 +10,8 @@ class Login extends React.Component {
 
     this.state = {
       email: null,
-      passwd: null
+      passwd: null,
+      wrongPwdMail: false
     };
   }
 
@@ -20,6 +21,7 @@ class Login extends React.Component {
     return (
       <div className="Login">
         <h1>Login</h1>
+          {this.state.wrongPwdMail?<div className="Login__fail">votre email ou mot de passe à échoué</div>:null}
         <input
           type="email"
           style={{ gridRow: "5 / 6" }}
@@ -56,6 +58,9 @@ class Login extends React.Component {
       this.props.history.push("/dashboard");
     } else {
       console.error("you send a wrong mdp or mail");
+        this.setState({
+            wrongPwdMail:true
+        });
     }
   }
 
